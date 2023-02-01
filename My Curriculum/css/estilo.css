@@ -1,12 +1,12 @@
 /* Define a responsividade no documento HTML */
-.container {
-    width: 80%;
+section.container {
+    width: 100%;
     margin: 0 auto;
 }
-.item {
-    width: 30%;
+section.item {
+    width: 31%;
     float: left;
-    margin-right: 2%;
+    margin-right: 20%;
 }
 
 /* Define o estilo geral da página */
@@ -17,45 +17,78 @@ body {
 }
 
 /* Define o estilo do cabeçalho */
-header {
+header#cabecalho {
     background-color: #F5F5F5;
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
-/* Define o estilo da imagem*/
-img {
+header#cabecalho img {
     border: 2px solid black;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     width: 9%;
     object-fit: cover;
+    float: right;
 }
 
+header#cabecalho h1 {
+    font-size: 14pt;
+}
+
+header#cabecalho p {
+    font-size: 12pt;
+}
+
+header#cabecalho a {
+    font-size: 12pt;
+    color: #000000;
+    text-decoration: none;
+}
+
+header#cabecalho a:hover {
+    text-decoration: underline;
+}
 
 /* Define o estilo dos títulos */
 h1, h2, h3 {
     margin: 0;
 }
 
+section h2 {
+    font-size: 14pt;
+}
+
+section h3 {
+    font-size: 12pt;
+}
+
+section p {
+    font-size: 10pt;
+}
+
 /* Define o estilo das listas */
-ul {
+section ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 /* Define o estilo dos itens da lista */
-li {
+section li {
     margin-bottom: 10px;
+    font-size: 10pt;
 }
 
-/* Define o estilo das seções de educação e experiência */
-.section {
-    margin-bottom: 30px;
+section#resumo p {
+    margin: 0;
 }
 
-/* Define o estilo das seções de educação e experiência */
-.section h2 {
-    margin-bottom: 15px;
+section#projetos a {
+    color: #000000;
+    text-decoration: none;
+}
+
+section#projetos a:hover {
+    text-decoration: underline;
 }
